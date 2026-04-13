@@ -18,7 +18,6 @@ public class NPCRelationDisplay : MonoBehaviour
 
     void Update()
     {
-        // İsteğe bağlı: her frame güncellenmesin dersen bu kısmı silebilirsin
         UpdateRelationText();
     }
 

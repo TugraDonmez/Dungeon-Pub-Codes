@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aabd311055ef5c43af00e8a216eddae, type: 3}
+  m_Name: npcDialog_0
+  m_EditorClassIdentifier: 
+  npcId: NPC_morvick
+  minRelation: -1
+  maxRelation: 1
+  dialogueOptions:
+  - playerLine: "Ma\u011Fazan\u0131 G\xF6rebilirmiyim?"
+    npcResponse: bak bakam
+    relationChangeAmount: 0
+    actionType: 1
+    relatedShop: {fileID: 11400000, guid: 5a63eb860c33a314da913d85a320b98d, type: 2}
+    nextNodes: []
+  - playerLine: "Burada i\u015Fler nas\u0131l gidiyor?"
+    npcResponse: Sanane la
+    relationChangeAmount: 0
+    actionType: 0
+    relatedShop: {fileID: 0}
+    nextNodes:
+    - playerLine: "Sadece iyili\u011Fin i\xE7in sordum."
+      npcResponse: "Tamam al\u0131\u015Fveri\u015F yapacaksan yap."
+      relationChangeAmount: 2
+      actionType: 3
+      relatedShop: {fileID: 0}
+      nextNodes:
+      - playerLine: "Ayr\u0131l"
+        npcResponse: 
+        relationChangeAmount: 0
+        actionType: 5
+        relatedShop: {fileID: 0}
+        nextNodes: []
+    - playerLine: Kes lan salak vampir
+      npcResponse: tamam abi
+      relationChangeAmount: -2
+      actionType: 4
+      relatedShop: {fileID: 0}
+      nextNodes:
+      - playerLine: "Ayr\u0131l"
+        npcResponse: 
+        relationChangeAmount: 0
+        actionType: 5
+        relatedShop: {fileID: 0}
+        nextNodes: []
